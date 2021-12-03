@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+    <title>Bank of Money</title>
+    <script src = './User/user.ts'></script>
+    <script src = './Transfer/index.ts'></script> 
+  </head>
+<body>
+    <header class="shadow p-3 mb-5 bg-light rounded">
+      <div class="d-flex"> 
+        <div>
+          <img class = "ml-4 p-5" style= " width: 100%" src="./Images/cutePig.png" alt="piggy face with dollar signs for eyes"/>
+        </div>
+        <div class="container text-black mr-4 pr-4">
+          <h1 style = " text-align: center;"class="display-2">Bank of Money</h1>
+          <p style = " text-align: center;" class="lead pt-3">We Are Not a Scam ;)</p>
+        </div>
+        <div>
+          <img class = "ml-4 p-5" style= " width: 100%" src="./Images/cutePig.png" alt="piggy face with dollar signs for eyes"/>
+        </div>    
+        
+      </div>    
+    </header>
+        <div id = 'loginBox' class="container justify-content-center d-flex">
+          <div class="table col-3 bg-warning shadow-lg p-3 mb-5 rounded">
+            <h2 class="text-center pb-3 text-monospace">Login</h2>
+           <div id = 'login'><form action="/dashboard.html" class="loginForm mx-5 px-lg-5 pb-5">
+            <div class="input-group justify-content-center">
+                <label for="accountNumb" class="label text-nowrap font-weight-bolder text-muted pr-3">Account Number</label>
+                <input type="text" id="accountNumb" class="input">
+                <span class="error-message"></span>
+            </div>
+            <br>
+            <div class="input-group justify-content-center">
+                <label for="pin" class="label font-weight-bolder text-muted pr-3">Pin</label>
+                <input type="password" id="pin" class="input">
+                <span class="error-message"></span>      
+            <div class = "container d-flex justify-content-center">
+              <div class ="pt-4 pl-5 mr-3">
+                <button id = 
+                login class="btn btn-info" type="submit">Login</button>
+              </div>
+              <div class = "pt-4 mr-5">
+                <a href = "/User/newuser.js"><button class="btn btn-dark" type="submit">register</button></a>
+              </div>
+              
+            </div>     
+            </form></div>   
+        </div> 
+      </div>
+      
+    <div id="root"></div>
+    <script src = "./index.js"></script>
+    
+</body>
+</html>

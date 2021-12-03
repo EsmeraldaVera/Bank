@@ -1,0 +1,46 @@
+
+=====================================
+customers
+id account pin balance
+=====================================
+create table customers(
+   customerId INT NOT NULL AUTO_INCREMENT,
+   account INT NOT NULL,
+   pin INT NOT NULL,
+   balance INT,
+   PRIMARY KEY (customerId)
+);
+
+insert customers (
+account,
+pin,
+ balance )
+ values(
+ 12345678,
+ 1234,
+ 200);
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+transfers
+id transfer_to  transfer_from amount transfer_time
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CREATE TABLE transfers (
+    id int NOT NULL AUTO_INCREMENT,
+    transfer_to int NOT NULL,
+    transfer_from int NOT NULL,
+    amount int NOT NULL,
+    transfer_time TIMESTAMP DEFAULT current_timestamp(),
+    PRIMARY KEY (id),
+    FOREIGN KEY (transfer_to) REFERENCES customers(customerId)
+);
+
+insert transfers (
+transfer_to,
+transfer_from,
+amount)
+ values(
+ 1,
+ 87654321,
+ 50);
